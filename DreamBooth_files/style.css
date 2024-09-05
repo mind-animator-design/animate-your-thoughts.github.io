@@ -124,6 +124,13 @@ p code {
   gap: 1px; /* 设置元素之间的间隙 */
   justify-content: center; /* 水平居中对齐 */
   align-content: center; /* 垂直居中对齐 */
+  width: 100%; /* 确保 .teaser-gif 填满 .content */
+  box-sizing: border-box; /* 确保 padding 和 border 包含在宽度内 */
+}
+
+.teaser-gif-item {
+  width: 117px; /* 设置 GIF 的宽度 */
+  box-sizing: border-box; /* 确保 padding 和 border 包含在宽度内 */
 }
 
 .row-label {
