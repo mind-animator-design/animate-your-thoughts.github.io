@@ -129,7 +129,8 @@ p code {
 }
 
 .teaser-gif-item {
-  width: 117px; /* 设置 GIF 的宽度 */
+  width: 110px;
+  height: 110px; /* 设置 GIF 的宽度 */
   box-sizing: border-box; /* 确保 padding 和 border 包含在宽度内 */
   margin: 0; /* 移除默认外边距 */
 }
