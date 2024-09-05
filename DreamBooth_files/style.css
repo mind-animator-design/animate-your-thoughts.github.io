@@ -116,11 +116,11 @@ p code {
   margin-right: auto;
 } */
 
-
 .teaser-gif {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(4, auto);
+  grid-gap: 0; /* 使用 grid-gap 作为备选 */
   gap: 0;
   justify-content: center;
   align-content: center;
