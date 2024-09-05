@@ -119,28 +119,31 @@ p code {
 
 .teaser-gif {
   display: grid;
-  grid-template-columns: repeat(7, 1fr); /* 创建7列，每列占据等分的空间 */
-  grid-template-rows: repeat(4, auto); /* 创建4行，每行的高度自动 */
-  gap: 0 px; /* 设置元素之间的间隙 */
-  justify-content: center; /* 水平居中对齐 */
-  align-content: center; /* 垂直居中对齐 */
-  width: 100%; /* 确保 .teaser-gif 填满 .content */
-  box-sizing: border-box; /* 确保 padding 和 border 包含在宽度内 */
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 0;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .teaser-gif-item {
-  width: 117px; /* 设置 GIF 的宽度 */
-  box-sizing: border-box; /* 确保 padding 和 border 包含在宽度内 */
+  width: 117px;
+  box-sizing: border-box;
+  margin: 0;
+  display: block;
 }
 
 .row-label {
   display: flex;
-  justify-content: center; /* 水平居中 */
-  align-items: center; /* 垂直居中 */
-  white-space: pre-wrap; /* 允许文字自动换行 */
-  word-break: break-word; /* 允许在单词内换行 */
-  width: 100%; /* 宽度与网格单元相同 */
-  padding: 0px; /* 根据需要调整内边距 */
+  justify-content: center;
+  align-items: center;
+  white-space: pre-wrap;
+  word-break: break-word;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .teaser-gif > .row-label::before {
