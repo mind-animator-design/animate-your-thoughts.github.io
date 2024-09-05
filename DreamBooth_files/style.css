@@ -128,8 +128,8 @@ p code {
 }
 
 .teaser-gif-item {
-  width: 100%; /* 确保 GIF 填满单元格 */
-  height: auto; /* 高度根据宽度自动调整 */
+  width: 110px; /* 确保 GIF 填满单元格 */
+  height:110px;
   box-sizing: border-box; /* 包括 padding 和 border */
   margin: 0;
 }
