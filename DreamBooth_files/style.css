@@ -109,7 +109,7 @@ p code {
 .teaser-gif {
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  /* margin-right: auto; */
 }
 .summary-img {
   width: 100%;
