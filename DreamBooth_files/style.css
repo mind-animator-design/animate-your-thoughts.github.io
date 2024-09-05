@@ -107,9 +107,13 @@ p code {
   margin-right: auto;
 }
 .teaser-gif {
-  display: block;
+ margin: 0 auto;
+ display: flex;
+ 
+ 
+  /* display: block;
   margin-left: auto;
-  /* margin-right: auto; */
+  margin-right: auto; */
 }
 .summary-img {
   width: 100%;
