@@ -118,21 +118,20 @@ p code {
 
 .teaser-gif {
   display: grid;
-  grid-template-columns: repeat(7, 1fr); /* 创建7列，每列占据等分的空间 */
-  grid-template-rows: repeat(4, auto); /* 创建4行，每行的高度自动 */
-  grid-gap: 1px; /* 设置网格间隙为1px */
-  gap: 1px; /* 另一种写法，确保间隙为1px */
-  justify-content: center; /* 水平居中对齐 */
-  align-content: center; /* 垂直居中对齐 */
+  grid-template-columns: repeat(7, auto); /* 创建7列，列宽度根据内容自动调整 */
+  grid-template-rows: repeat(4, auto); /* 创建4行，高度自动 */
+  gap: 1px; /* 设置横向和纵向间隙为1px */
+  justify-content: center; /* 水平居中 */
+  align-content: center; /* 垂直居中 */
   width: 100%; /* 确保 .teaser-gif 填满 .content */
-  box-sizing: border-box; /* 确保 padding 和 border 包含在宽度内 */
+  box-sizing: border-box; /* 包括 padding 和 border */
 }
 
 .teaser-gif-item {
-  width: 110px;
-  height: 110px; /* 设置 GIF 的宽度 */
-  box-sizing: border-box; /* 确保 padding 和 border 包含在宽度内 */
-  margin: 0; /* 移除默认外边距 */
+  width: 100%; /* 确保 GIF 填满单元格 */
+  height: auto; /* 高度根据宽度自动调整 */
+  box-sizing: border-box; /* 包括 padding 和 border */
+  margin: 0;
 }
 
 .row-label {
