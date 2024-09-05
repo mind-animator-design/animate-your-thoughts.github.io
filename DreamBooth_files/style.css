@@ -140,7 +140,7 @@ p code {
   white-space: pre-wrap; /* 允许文字自动换行 */
   word-break: break-word; /* 允许在单词内换行 */
   width: 100%; /* 宽度与网格单元相同 */
-  padding: 1px; /* 根据需要调整内边距 */
+  padding: 0px; /* 根据需要调整内边距 */
 }
 
 .teaser-gif > .row-label::before {
