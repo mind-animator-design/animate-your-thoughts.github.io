@@ -118,7 +118,7 @@ p code {
 
 .teaser-gif {
   display: grid;
-  grid-template-columns: repeat(7, auto); /* 创建7列，列宽度根据内容自动调整 */
+  grid-template-columns: repeat(8, auto); /* 创建8列，列宽度根据内容自动调整 */
   grid-template-rows: repeat(4, auto); /* 创建4行，高度自动 */
   gap: 1px; /* 设置横向和纵向间隙为1px */
   justify-content: center; /* 水平居中 */
@@ -128,8 +128,8 @@ p code {
 }
 
 .teaser-gif-item {
-  width: 110px; /* 确保 GIF 填满单元格 */
-  height:110px;
+  width: 100%; /* 确保 GIF 填满单元格 */
+  height: auto;
   box-sizing: border-box; /* 包括 padding 和 border */
   margin: 0;
 }
