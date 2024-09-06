@@ -136,7 +136,7 @@ p code {
 
 .row-label {
   display: flex;
-  /* justify-content: center; 水平居中 */
+  /* justify-content: center;  水平居中 */
   align-items: center; /* 垂直居中 */
   white-space: pre-wrap; /* 允许文字自动换行 */
   word-break: break-word; /* 允许在单词内换行 */
