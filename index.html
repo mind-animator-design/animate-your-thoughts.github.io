@@ -20,7 +20,7 @@
     <img src="./DreamBooth_files/gif/1-6.gif" class="teaser-gif-item" >
     <img src="./DreamBooth_files/gif/1-7.gif" class="teaser-gif-item" >
 
-    <div class="row-label" data-label="Reconstructed results"></div>
+    <div class="row-label reconstructed-label" data-label="Reconstructed results"></div>
     <img src="./DreamBooth_files/gif/2-1.gif" class="teaser-gif-item" >
     <img src="./DreamBooth_files/gif/2-2.gif" class="teaser-gif-item" >
     <img src="./DreamBooth_files/gif/2-3.gif" class="teaser-gif-item" >
@@ -38,7 +38,7 @@
     <img src="./DreamBooth_files/gif/3-6.gif" class="teaser-gif-item" >
     <img src="./DreamBooth_files/gif/3-7.gif" class="teaser-gif-item" >
     
-    <div class="row-label" data-label="Reconstructed results"></div>
+    <div class="row-label reconstructed-label" data-label="Reconstructed results"></div>
     <img src="./DreamBooth_files/gif/4-1.gif" class="teaser-gif-item" >
     <img src="./DreamBooth_files/gif/4-2.gif" class="teaser-gif-item" >
     <img src="./DreamBooth_files/gif/4-3.gif" class="teaser-gif-item" >
@@ -66,8 +66,8 @@
     </font> -->
 </div>
 <div class="content">
-  <h2 style="text-align:center;">Abstract摘要</h2>
-  <p>文字文字文字Large text-to-image models achieved a remarkable leap in the evolution of AI, enabling high-quality and diverse synthesis of images from a given text prompt. However, these models lack the ability to mimic the appearance of subjects in a given reference set and synthesize novel renditions of them in different contexts. In this work, we present a new approach for "personalization" of text-to-image diffusion models (specializing them to users' needs). Given as input just a few images of a subject, we fine-tune a pretrained text-to-image model (Imagen, although our method is not limited to a specific model) such that it learns to bind a unique identifier with that specific subject. Once the subject is embedded in the output domain of the model, the unique identifier can then be used to synthesize fully-novel photorealistic images of the subject contextualized in different scenes. By leveraging the semantic prior embedded in the model with a new autogenous class-specific prior preservation loss, our technique enables synthesizing the subject in diverse scenes, poses, views, and lighting conditions that do not appear in the reference images. We apply our technique to several previously-unassailable tasks, including subject recontextualization, text-guided view synthesis, appearance modification, and artistic rendering (all while preserving the subject's key features).</p>
+  <h2 style="text-align:center;">Abstract</h2>
+  <p> Reconstructing human dynamic vision from brain activity is a challenging task with great scientific significance.  Although prior video reconstruction methods have made substantial progress, they still suffer from several limitations, including: (1) difficulty in simultaneously reconciling semantic (e.g. categorical descriptions), structure (e.g. size and color), and consistent motion information (e.g. order of frames); (2) low temporal resolution of fMRI, which poses a challenge in decoding multiple frames of video dynamics from a single fMRI frame; (3) reliance on video generation models, which introduces ambiguity regarding whether the dynamics observed in the reconstructed videos are genuinely derived from fMRI data or are artifacts introduced by the model's exposure to external video data during training. To overcome these limitations,  we propose a two-stage model named Mind-Animator. During the fMRI-to-feature stage, we decouple semantic, structure, and motion features from fMRI. Specifically, we employ fMRI-vision-language tri-modal contrastive learning to decode semantic feature from fMRI and design a sparse causal attention mechanism for decoding multi-frame video motion features through a next-frame-prediction task. In the feature-to-video stage, these features are integrated into videos using an inflated Stable Diffusion, effectively eliminating external video data interference.  Extensive experiments on multiple video-fMRI datasets demonstrate that our model achieves state-of-the-art performance. Comprehensive experimental analyses further elucidate the interpretability of our model from a neurobiological perspective.</p>
 </div>
 <div class="content">
   <h2>Background背景</h2>
