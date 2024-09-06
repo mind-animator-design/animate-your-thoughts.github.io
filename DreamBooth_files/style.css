@@ -149,9 +149,6 @@ p code {
   content: attr(data-label)"";
 }
 
-.teaser-gif > .reconstructed-label::before {
-  content: attr(data-label) "     "; /* 在这里添加三个空格 */
-}
 
 
 .summary-img {
