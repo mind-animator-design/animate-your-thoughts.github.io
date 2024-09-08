@@ -56,7 +56,7 @@
   <img src="./DreamBooth_files/1-5.gif" class="teaser-gif" width="117" height="117""><br> -->
 
 
-  <h3 style="text-align:center"><em> 一句话简介</em></h3>
+  <!-- <h3 style="text-align:center"><em> 一句话简介</em></h3> -->
   <!--   <font size="+2">
            <p style="text-align: center;">
             <a href="https://arxiv.org/abs/2208.12242" target="_blank">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -70,10 +70,11 @@
   <p> Reconstructing human dynamic vision from brain activity is a challenging task with great scientific significance.  Although prior video reconstruction methods have made substantial progress, they still suffer from several limitations, including: (1) difficulty in simultaneously reconciling semantic (e.g. categorical descriptions), structure (e.g. size and color), and consistent motion information (e.g. order of frames); (2) low temporal resolution of fMRI, which poses a challenge in decoding multiple frames of video dynamics from a single fMRI frame; (3) reliance on video generation models, which introduces ambiguity regarding whether the dynamics observed in the reconstructed videos are genuinely derived from fMRI data or are artifacts introduced by the model's exposure to external video data during training. To overcome these limitations,  we propose a two-stage model named Mind-Animator. During the fMRI-to-feature stage, we decouple semantic, structure, and motion features from fMRI. Specifically, we employ fMRI-vision-language tri-modal contrastive learning to decode semantic feature from fMRI and design a sparse causal attention mechanism for decoding multi-frame video motion features through a next-frame-prediction task. In the feature-to-video stage, these features are integrated into videos using an inflated Stable Diffusion, effectively eliminating external video data interference.  Extensive experiments on multiple video-fMRI datasets demonstrate that our model achieves state-of-the-art performance. Comprehensive experimental analyses further elucidate the interpretability of our model from a neurobiological perspective.</p>
 </div>
 <div class="content">
-  <h2>Background背景</h2>
-  <p> Given a particular subject such as clock (shown in the real images on the left), it is very challenging to generate it in different contexts with state-of-the-art text-to-image models, while maintaining high fidelity to its key visual features. Even with dozens of iterations over a text prompt that contains a detailed description of the appearance of the clock (<em>"retro style yellow alarm clock with a white clock face and a yellow number three on the right part of the clock face in the jungle"</em>), the Imagen model [Saharia et al., 2022] can't reconstruct its key visual features (third column). Furthermore, even models whose text embedding lies in a shared language-vision space and can create semantic variations of the image, such as DALL-E2 [Ramesh et al., 2022], can neither reconstruct the appearance of the given subject nor modify the context (second column). In contrast, our approach (right) can synthesize the clock with high fidelity and in new contexts (<em>"a [V] clock in the jungle"</em>).</p>
+  <h2>Motivations</h2>
+  <img class="summary-img" src="./DreamBooth_files/p1.png" style="width:100%;"> <br>
+  <p> When subjects view static images, the primary visual cortex first processes low-level structural information, such as location, shape, size, and color. Subsequently, in the higher visual cortex, the interpretation of category and description leads to high-level semantic understanding. Based on these findings in neuroscience, previous studies have attempted to reconstruct images by disentangling semantic and structural information. Naturally, when reconstructing dynamic video stimuli, in addition to these two features, it is also crucial to consider how motion information can be decoded from brain responses. </p>
   <br>
-  <img class="summary-img" src="./DreamBooth_files/background.png" style="width:100%;"> <br>
+
 </div>
 <div class="content">
   <h2>Approach</h2>
