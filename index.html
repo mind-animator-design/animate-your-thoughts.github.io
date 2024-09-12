@@ -83,6 +83,13 @@
   <br>
   <p>As shown in Figure (b), with advancements in multimodal and generative models, Chen, Sun, et al. used contrastive learning to map fMRI signals to the CLIP latent space for semantic decoding, followed by input into a video generation model for reconstruction. This approach produces semantically coherent and smooth videos, but it remains <strong> whether the motion information in the reconstructions originates from the fMRI or from the external video data used to train the video generation model. </strong> </p>
   <br>
+  <p>To address the above issue, we propose Mind-Animator. By independently decoding semantic, structural, and motion information from fMRI signals and inputting them into an <strong>inflated image generation model</strong>, we ensure that the motion in the reconstructed videos originates solely from the fMRI data.   </p>
+  <img class="summary-img" src="./DreamBooth_files/p5.gif" style="width:100%;">
+  <p>Notably, our method, which decodes semantic, structural, and motion information separately, produces reconstructions more closely aligned with the original video's <strong>appearance and motion trajectory</strong> (e.g., a forward-extending road). However, as shown in the red box, the use of an image generation model alone introduces 'jumpiness' between frames, resulting in lower inter-frame similarity and reduced smoothness compared to video generation models.  </p>
+  <br>
+  <p>Therefore, video generation models were only used in the video demonstrations on the project homepage to enhance smoothness. In all other contexts (e.g., quantitative analysis, ablation studies, interpretability analysis), unless otherwise specified, only image generation models were employed.  </p>
+  
+  
   <img class="summary-img" src="./DreamBooth_files/high_level.png" style="width:100%;"> <br>
   <p>Given ~3-5 images of a subject we fine tune a text-to-image diffusion in two steps: (a) fine tuning the low-resolution text-to-image model with the input images paired with a text prompt containing a unique identifier and the name of the class the subject belongs to (e.g., "A photo of a [T] dog”), in parallel, we apply a class-specific prior preservation loss, which leverages the semantic prior that the model has on the class and encourages it to generate diverse instances belong to the subject's class by injecting the class name in the text prompt (e.g., "A photo of a dog”). (b) fine-tuning the super resolution components with pairs of low-resolution and high-resolution images taken from our input images set, which enables us to maintain high-fidelity to small details of the subject.</p>
   <br>
