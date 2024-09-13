@@ -182,24 +182,72 @@
 </div>
 
 <div class="content">
-  <h2>Societal Impact</h2>
-  <p>This project aims to provide users with an effective tool for synthesizing personal subjects (animals, objects) in different contexts. While general text-to-image models might be biased towards specific attributes when synthesizing images from text, our approach enables the user to get a better reconstruction of their desirable subjects. On contrary, malicious parties might try to use such images to mislead viewers. This is a common issue, existing in other generative models approaches or content manipulation techniques. Future research in generative modeling, and specifically of personalized generative priors, must continue investigating and revalidating these concerns.</p>
+  <h2 style="text-align:center;">Fail Cases</h2>
+  <p><strong>Case 1：</strong>Decoding errors in semantic, structural, or motion features due to low decoding accuracy.</p>
+    <div class="container1">
+      <!-- Title Row for "Ground truth" and "Reconstructed" -->
+      <div class="row1">
+        <div class="column1">
+            <p class="column-title">Ground truth Reconstructed</p>
+        </div>
+        <div class="column1">
+            <p class="column-title">Ground truth Reconstructed</p>
+        </div>
+        <div class="column1">
+            <p class="column-title">Ground truth Reconstructed</p>
+        </div>
+        <div class="column1">
+            <p class="column-title">Ground truth Reconstructed</p>
+        </div>
+    </div>
+      <!-- Row with 5 columns -->
+      <div class="row1">
+          <div class="column1">
+            <img class="custom-img" src="./DreamBooth_files/P16/1-1.gif" alt="Image 1">
+          </div>
+          <div class="column1">
+            <img class="custom-img" src="./DreamBooth_files/P16/1-2.gif" alt="Image 2">
+          </div>
+          <div class="column1">
+            <img class="custom-img" src="./DreamBooth_files/P16/1-3.gif" alt="Image 3">
+          </div>
+          <div class="column1">
+            <img class="custom-img" src="./DreamBooth_files/P16/1-4.gif" alt="Image 4">
+          </div>
+
+      </div>
+      <p><strong>Case 2：</strong>The data acquisition paradigm causes abrupt content transitions at the boundaries of video clips, which are uniformly segmented from the complete videos viewed by the subjects during data collection. </p>
+      <!-- Second row with 5 columns -->
+      <div class="row1">
+        <div class="column1">
+            <p class="column-title">Ground truth Reconstructed</p>
+        </div>
+        <div class="column1">
+            <p class="column-title">Ground truth Reconstructed</p>
+        </div>
+        <div class="column1">
+            <p class="column-title">Ground truth Reconstructed</p>
+        </div>
+        <div class="column1">
+            <p class="column-title">Ground truth Reconstructed</p>
+        </div>
+    </div>
+      <div class="row1">
+          <div class="column1">
+              <img class="custom-img" src="./DreamBooth_files/P16/2-1.gif" alt="Image 6">
+          </div>
+          <div class="column1">
+              <img class="custom-img" src="./DreamBooth_files/P16/2-2.gif" alt="Image 7">
+          </div>
+          <div class="column1">
+              <img class="custom-img" src="./DreamBooth_files/P16/2-3.gif" alt="Image 8">
+          </div>
+          <div class="column1">
+              <img class="custom-img" src="./DreamBooth_files/P16/2-4.gif" alt="Image 9">
+          </div>
+      </div>
+ 
   <br>
-</div>
-<div class="content">
-  <h2>BibTex</h2>
-  <code> @article{ruiz2022dreambooth,<br>
-  &nbsp;&nbsp;title={DreamBooth: Fine Tuning Text-to-image Diffusion Models for Subject-Driven Generation},<br>
-  &nbsp;&nbsp;author={Ruiz, Nataniel and Li, Yuanzhen and Jampani, Varun and Pritch, Yael and Rubinstein, Michael and Aberman, Kfir},<br>
-  &nbsp;&nbsp;booktitle={arXiv preprint arxiv:2208.12242},<br>
-  &nbsp;&nbsp;year={2022}<br>
-  } </code> 
-</div>
-<div class="content" id="acknowledgements">
-  <p><strong>Acknowledgements</strong>:
-    We thank Rinon Gal, Adi Zicher, Ron Mokady, Bill Freeman, Dilip Krishnan, Huiwen Chang and Daniel Cohen-Or for their valuable inputs that helped improve this work, and to Mohammad Norouzi, Chitwan Saharia and William Chan for providing us with their support and the pretrained models of Imagen. Finally, a special thank you to David Salesin for his feedback, advice and for his support for the project.
-    <!-- Recycling a familiar <a href="https://chail.github.io/latent-composition/">template</a> ;). --> 
-  </p>
 </div>
 </body>
 </html>
